@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Afacad", sans-serif;
+}
+
+.landing {
+  background-image: url(/images/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  nav {
+    padding: 2em;
+    background-color: #3559e0;
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5em;
+      a {
+        color: #ffecd6;
+        text-decoration: none;
+      }
+      .logo {
+        font-size: 26px;
+        align-items: center;
+        color: #ffecd6;
+      }
+      .links {
+        align-items: center;
+        display: flex;
+        font-size: 18px;
+        ul {
+          display: flex;
+          list-style-type: none;
+          align-items: center;
+          li {
+            margin: 0 0.5em;
+            a {
+              &:hover {
+                color: #4cb9e7;
+              }
+            }
+          }
+        }
+
+        button {
+          background-color: transparent;
+          border: none;
+          color: red;
+          display: none;
+          img {
+            max-width: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .ham-menu {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.582);
+    ul {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .hero {
+    .container {
+      background-color: rgba(0, 0, 0, 0.582);
+      height: 45.5em;
+      display: flex;
+      margin: auto;
+      align-items: center;
+      float: left;
+      .text {
+        color: #ffecd6;
+        padding: 0 8em;
+
+        .accent {
+          color: #4cb9e7;
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 68px;
+          line-height: 0.9em;
+        }
+        p {
+          max-width: 400px;
+        }
+        button {
+          padding: 0.5em 1.5em;
+          border: 2px solid #3559e0;
+          background-color: #4cb9e7;
+          color: #0f2167;
+          border-radius: 5px;
+          font-size: 18px;
+
+          &:hover {
+            background-color: #ffecd6;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .landing {
+    nav {
+      .nav-container {
+        .links {
+          ul {
+            li {
+              a {
+                display: none;
+              }
+            }
+          }
+
+          button {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
